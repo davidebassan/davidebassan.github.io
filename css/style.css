@@ -3,6 +3,7 @@ body {
 	text-align: center;
 	color:#fff;
 	padding-top:5em;
+	font-family: 'Fira Code', monospace;
   }
 .content{
 	margin-left: 1em;
@@ -25,11 +26,23 @@ h1 {
 	}
   }
 
-  a{
-	  color: #fff
+  a:link {
+	text-decoration: none;
+	color: white;
   }
-  a:hover{
-	  color: #000
+  
+  a:visited {
+	text-decoration: none;
+	color: white;
+  }
+
+  a{
+	text-decoration: none;
+	color: white;
+  }
+  a:active{
+	text-decoration: none;
+	color: white;
   }
 
   .social-container{
@@ -40,7 +53,76 @@ h1 {
 		background:rgb(238, 146, 143);
 		padding-top: 6px;
   }
-
   .social-container > a {
 	  padding-left: 20px;
+	  color: #fff
+  }
+  .social-container > a:hover{
+	color: #000
+  }
+  .button{
+	background-color: transparent;
+	border: 1px solid rgb(238, 146, 143);
+	border-radius: 15px;
+	color: rgb(238, 146, 143);
+	margin-top: 5em;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+  }
+
+  .button:hover {
+	background-color: transparent;
+	border: 1px solid rgb(238, 146, 143);
+	border-radius: 15px;
+	color: rgb(238, 146, 143);
+	margin-top: 5em;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	text-transform: uppercase;
+  }
+
+
+  @media only screen and (max-width: 600px){
+	body {
+		background-color:#ce3635;
+		text-align: center;
+		color:#fff;
+		padding-top:0em;
+		font-family: 'Fira Code', monospace;
+	  }
+	  .button {
+		background-color: transparent;
+		border: 1px solid black;
+		border-radius: 15px;
+		color: white;
+		margin-top: 2em;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		text-transform: uppercase;
+	  }
+	
+	  .button:hover {
+		background-color: transparent;
+		border: 1px solid white;
+		border-radius: 15px;
+		color: white;
+		margin-top: 2em;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		text-transform: uppercase;
+	  }
+
   }
