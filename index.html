@@ -1,106 +1,142 @@
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
-		<title>Dr. Bassan Davide</title>
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    <title>Dr. Bassan Davide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
     <div class="main-content">
-      <div class="content">
-        <h1></h1>
-        <h2>Davide Bassan</h2>
-        <h3># M.Sc. Student at Universit&agrave; Degli Studi di Padova</h3>
-      </div>
-      
-      <!-- Button know more about me... -->
-      <a href="documents/BassanDavide-CV.pdf" target="_blank" class="button"><i class="fa fa-address-card fa-2x" aria-hidden="true"></i> View CV</a>
-
-      <!-- Some relevant works -->
-      <div class="projects">
-        <div class="project">
-            <h4>Midge.xyz</h4>
-            <p class="text-justify"><b>A 2D online multiplayer game</b>, developed in <b>Node.js</b>.
-                Players control a square character (the 'mosquito') that <b>rotates</b> based on <b>mouse</b> movement and <b>moves</b> within the map using the <b>keyboard keys</b>
-                Each mosquito has a stinger (a white triangle) in the upper-left corner, 
-                and the objective is to sting opponents on their exposed areas while avoiding being stung by enemy stingers.</p>
-            <div class="project-buttons">
-                <a href="documents/Midge_xyz.pdf" target="_blank" class="project-button"><i class="fa fa-file-pdf-o"></i> View PDF</a>
-                <a href="https://github.com/davidebassan/Midge" target="_blank" class="project-button"><i class="fa fa-github"></i> Source Code</a>
+        <div class="introduction">
+        <!-- Postcard -->
+            <div class="content postcard">
+                <img src="img/profile_pic.png" alt="Foto profilo" class="profile-pic">
+                <h1></h1>
+                <h2>Davide Bassan</h2>
+                <h3>M.Sc. Student at Universit&agrave; Degli Studi di Padova</h3>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/davide-bassan/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="mailto:davidebassan@outlook.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/blessed_basss/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://t.me/dbasso" target="_blank"><i class="fa fa-telegram"></i></a>
+                    <a href="documents/BassanDavide-CV.pdf" target="_blank"><i class="fa fa-address-card"></i></a>
+                </div>
+            </div>
+        
+            <!-- Who I Am Section -->
+            <div class="who-i-am">
+                <h2 class="section-title">Who I Am</h2>
+                <p>At the age of 10, I became <b>enamored with the world of computing</b>, immediately delving into learning about how computers function.</p>
+                <p>Today, I am a </b>Master's student in Computer Science</b> at the University of Padua (a name I do not entirely share because, if anything, it is informatics that constitutes a science, not computers). I am currently <b>specializing in artificial intelligence</b>, following three years of study in Udine, where I focused on <b>Internet of Things, Big Data, & Web.</b></p>
+                <p class="hide_res">I have a profound passion for informatics and robotics. During my high school years, I participated in robotics competitions, advancing to the national phases. Additionally, I am involved in soccer, where I serve as a referee.</p>
             </div>
         </div>
-        <div class="project">
-            <h4>Robots for Environmental Exploration</h4>
-            <p class="text-justify">I designed and implemented a <b>robot</b> for <b>autonomous navigation</b> in unfamiliar environments. 
-              The robot <b>maps</b> its surroundings using a specialized laser sensor, <b>estimates its position</b> through various algorithms, 
-              and independently <b>reaches specific points of interest.</b> 
-              I also developed a <b>control panel</b> to monitor the robot's movements and <b>allows human intervention</b> via remote control in case of critical errors.</p>
-            <div class="project-buttons">
-                <a href="documents/robots_fee.pdf" target="_blank" class="project-button"><i class="fa fa-file-pdf-o"></i> View PDF</a>
-                <a href="https://github.com/davidebassan/Midge-Explorer" target="_blank" class="project-button"><i class="fa fa-github"></i> Source Code</a>
+        <!-- Relevant Projects -->
+        <h2 class="section-title">Relevant projects</h2>
+        <div class="projects">
+
+            <div class="project">
+                <div class="project-image hide_res" data-image="img/robot-env.png"></div>
+                <div class="project-content">
+                    <h4><b>Robots for Environmental Exploration</b></h4>
+                    <p class="tags">SLAM </p>
+                    <p class="tags">ROS</p>
+                    <p class="tags">IoT</p>
+                    <p class="tags">Robotics</p>
+
+                    <p class="project-description">Designed and implemented a robot for autonomous navigation in unfamiliar environments. The robot maps its surroundings using a specialized laser sensor, estimates its position through various algorithms, and independently reaches specific points of interest. Also developed a control panel to monitor the robot's movements and allows human intervention via remote control in case of critical errors.</p>
+                    <div class="project-buttons">
+                        <a href="documents/robots_fee.pdf" target="_blank" class="project-button"><i class="fa fa-file-pdf-o"></i></a>
+                        <a href="https://github.com/davidebassan/Midge-Explorer" target="_blank" class="project-button"><i class="fa fa-github"></i> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image hide_res" data-image="img/lips-reading.png"></div>
+                <div class="project-content">
+                    <h4><b>Lips Reading</b></h4>
+                    <p class="tags">Artificial Intelligence </p>
+                    <p class="tags">Keras </p>
+                    <p class="tags">Computer Vision </p>
+                    <p class="tags">Machine Learning </p>
+                    <p class="tags">Deep Learning</p>
+                    <p class="project-description">Using the MIRACL-VC1 dataset and the Keras library, I tackled the main problem by implementing a convolutional neural network (CNN) model. The CNN was trained to automatically extract salient features from video frames, leveraging its ability to learn complex visual patterns. Subsequently, I employed a recurrent neural network (RNN) architecture to process the features extracted from the CNN and predict words or phrases from the input video. Additionally, I applied data augmentation techniques to increase the variability of the training samples, thereby improving the model's performance and reducing the risk of overfitting.</p>
+                    <div class="project-buttons">
+                        <a href="documents/lips-reading.pdf" target="_blank" class="project-button"><i class="fa fa-file-pdf-o"></i></a>
+                        <a href="https://github.com/davidebassan/Midge-Explorer" target="_blank" class="project-button"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image hide_res" data-image="img/ardu-garden.JPG">
+                </div>
+                <div class="project-content">
+                    <h4><b>Ardu Garden</b></h4>
+
+                    <p class="tags">Arduino </p>
+                    <p class="tags">3D Printing </p>
+                    <p class="tags">Gardening</p>
+                    <p class="tags">IoT </p>
+                        <p class="project-description">This project implements a hydroponic garden system controlled via Arduino, entirely 3D-printed, which manages the irrigation pump and plant lighting. The system features a web interface for control and monitoring functionalities.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/davidebassan/Ardu-Garden" target="_blank" class="project-button"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-image hide_res" data-image="img/midge.png">
+                </div>
+                <div class="project-content">
+                    <h4><b>Midge</b></h4>
+                    <p class="tags">Node JS </p>
+                    <p class="tags">Multiplayer Game </p>
+                    <p class="project-description">A 2D online multiplayer game developed in Node.js. Players control a square character (the 'mosquito') that rotates based on mouse movement and moves within the map using the keyboard keys. Each mosquito has a stinger (a white triangle) in the upper-left corner, and the objective is to sting opponents on their exposed areas while avoiding being stung by enemy stingers.</p>
+                    <div class="project-buttons">
+                        <a href="documents/Midge_xyz.pdf" target="_blank" class="project-button"><i class="fa fa-file-pdf-o"></i></a>
+                        <a href="https://github.com/davidebassan/Midge" target="_blank" class="project-button"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
 
-
+        <!-- Websites that I make -->
+        <h2 class="section-title">Websites</h2>
+        <div class="projects">
+            <div class="project">
+                <div class="project-image hide_res" data-image="img/officina-camper-2000.png"></div>
+                <div class="project-content">
+                    <h4><b>Camper 2000</b></h4>
+                    <p class="project-description">Officina Camper 2000 specializes in camper van repair and conversion services. Upon the request of the client, I embarked on the task of redesigning and redeveloping their website from scratch, drawing inspiration from their previous site.</p>
+                    <div class="project-buttons">
+                        <a href="http://www.officinacamper2000.com/" target="_blank" class="project-button"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Tecnology that i use... -->
+    <!-- Social links and footer -->
     <div class="social-container">
-      <a href="https://www.instagram.com/blessed_basss/" target="_blank"><i class="fa fa-instagram fa-4x"></i></a>
-      <a href="https://www.linkedin.com/in/davide-bassan/" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
-      <a href="https://www.facebook.com/davide.bassan.9/" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
-
-      <p class="small">&copy; 2023 Davide Bassan | <a class='small' href="mailto:d.bassan@hotmail.it"style="color:#1E1E1E">davidebassan@outlook.com</a></p>
+        <a href="https://www.instagram.com/blessed_basss/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/davide-bassan/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        <a href="https://www.facebook.com/davide.bassan.9/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="mailto:davidebassan@outlook.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <p class="small">&copy; 2024 Davide Bassan</p>
     </div>
-	</body>
+
+    <script>
+        $('.project-image').each(function() {
+            var imageUrl = $(this).data('image');
+            $(this).css('background-image', 'url(' + imageUrl + ')');
+        });
+    </script>
+</body>
 </html>
-
-
-<script>
-document.addEventListener('DOMContentLoaded',function(event){
-  // array with texts to type in typewriter
-  var dataText = [ "Hello World.", "I'm Davide Bassan.", "I Love Informatics.", "I Love to Develop."];
-  
-  // type one text in the typwriter
-  // keeps calling itself until the text is finished
-  function typeWriter(text, i, fnCallback) {
-    // chekc if text isn't finished yet
-    if (i < (text.length)) {
-      // add next character to h1
-     document.querySelector("h1").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
-
-      // wait for a while and call this function again for next character
-      setTimeout(function() {
-        typeWriter(text, i + 1, fnCallback)
-      }, 100);
-    }
-    // text finished, call callback if there is a callback function
-    else if (typeof fnCallback == 'function') {
-      // call callback after timeout
-      setTimeout(fnCallback, 700);
-    }
-  }
-  // start a typewriter animation for a text in the dataText array
-   function StartTextAnimation(i) {
-     if (typeof dataText[i] == 'undefined'){
-        setTimeout(function() {
-          StartTextAnimation(0);
-        }, 20000);
-     }
-     // check if dataText[i] exists
-    if (i < dataText[i].length) {
-      // text exists! start typewriter animation
-     typeWriter(dataText[i], 0, function(){
-       // after callback (and whole text has been animated), start next text
-       StartTextAnimation(i + 1);
-     });
-    }
-  }
-  // start the text animation
-  StartTextAnimation(0);
-});
-
-</script>

@@ -1,211 +1,263 @@
 body {
-	background-color: #1E1E1E;
-	text-align: center;
-	color: #D4D4D4;
-	padding-top:5em;
-	font-family: 'Fira Code', monospace;
-}
-
-.content{
-	margin-left: 1em;
-	margin-right: 1em;
+    background-color: #f9f9f9; /* Colore di sfondo grigio chiaro */
+    font-family: 'Roboto', sans-serif; /* Font famiglia Roboto */
+    color: #424242; /* Colore del testo principale */
+    margin: 0;
+	margin-bottom: 90px;
+    margin-left: 90px;
+    margin-right: 0px;
+    padding: 0;
+    font-size: 18px;
 }
 
 .main-content {
-    padding-bottom: 90px; 
-	padding-left: 30px;
-	padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.content {
+    margin-bottom: 30px;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postcard,
+.who-i-am {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    flex: 1;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.tags{
+    background-color: #EFF4FF;
+    padding: 10px 20px;
+    border: none;
+    color: #2557D6;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 13px;
+    margin-left: -1px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.profile-pic {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-links a {
+    color: #1976d2;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.contact-links a:hover {
+    color: #d32f2f;
+}
+
+.who-i-am {
+    margin-left: auto;
 }
 
 h1 {
-	font-size: 3.5em;
-	color: #cecece;
-	text-transform: uppercase;
+    font-size: 3.5em;
+    color: #d32f2f;
+    text-transform: uppercase;
 }
 
-h2{
-	color: #d3794e;
+h2 {
+    color: #1976d2;
+    margin-top: 0;
 }
+
 h3 {
-	color: #648f51;
-	font-family: monospace;
-	font-style: italic;
+    color: #388e3c;
+    font-style: italic;
 }
 
-span {
-	border-right: .05em solid;
-	animation: caret 1s steps(1) infinite;
-}
-  
-@keyframes caret {
-	50% {
-		border-color: transparent;
-	}
-}
-
-a:link {
-	text-decoration: none;
-	color: #cecece;
-}
-  
-  a:visited {
-	text-decoration: none;
-	color: #cecece;
-  }
-
-  a{
-	text-decoration: none;
-	color: #cecece;
-  }
-  a:active{
-	text-decoration: none;
-	color: #cecece;
-  }
-
-.social-container{
-	position:fixed;
-	bottom:0;
-	width:100%;
-	height:90px;   /* Height of the footer */
-	background: #F2F7F2;
-	padding-top: 6px;
-}
-.social-container > a {
-	padding-left: 20px;
-	color: #d3794e
-}
-.social-container > a:hover{
-	color: #c2440a
-}
-.button{
-	background-color: #d3794e;
-	border-radius: 15px;
-	color: #5388b2;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 20px;
-	text-transform: uppercase;
-    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1); 
-}
-
-b {
-	font-weight: 700;
-	color: #d3794e;
+.button {
+    background-color: #d32f2f;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
 }
 
 .button:hover {
-	background-color: #c2440a;
-	border-radius: 15px;
-	color: #cecece;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 20px;
-	text-transform: uppercase;
-	box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+    background-color: #b71c1c;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
-  
-/* Stili per i progetti */
+
+.section-title {
+    margin-top: 50px;
+}
+
 .projects {
     display: flex;
-    flex-direction: column; 
-    margin-top: 20px; 
-	font-family: monospace, monospace;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .project {
-    background-color: #1E1E1E; 
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
     border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 20px; 
-	font-size: 1.4em;
-    box-shadow: 0px 4px 6px rgba(231, 231, 231, 0.272)
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.project-image {
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+    flex: 1;
+    background-size: cover; /* Assicura che l'immagine copra tutto il contenitore */
+    background-position: center; /* Centra l'immagine all'interno del contenitore */
+    background-repeat: no-repeat;
+}
+
+.project-image img {
+    display: none; /* Nascondi l'immagine poiché non verrà più utilizzata direttamente nell'HTML */
+}
+
+
+.project-content {
+    padding: 20px;
+    flex: 4;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .project h4 {
-    font-size: 1.7em;
     margin-top: 0;
-	color: #d3794e;
-	font-weight: 700;
-	
+    color: #1976d2;
 }
 
-.small{
-	color:#1E1E1E;
+.project-description {
+    margin-top: 0;
+    color: #424242;
 }
+
 .project-buttons {
     display: flex;
     justify-content: space-between;
 }
 
 .project-button {
-    background-color: transparent;
-    border: 1px solid #d3794e;
-    border-radius: 15px;
-    color: #d3794e;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    transition: background-color 0.3s, color 0.3s;
+    flex: 1;
+    margin: 0 5px; /* Aggiungi un margine tra i pulsanti */
+    border: 1px solid #1976d2; /* Aggiungi un bordo solido blu */
+    border-radius: 15px; /* Aggiungi un bordo arrotondato */
+    background-color: #1976d2; /* Imposta il colore di sfondo blu */
+    color: #ffffff; /* Imposta il colore del testo bianco */
+    padding: 8px 20px; /* Imposta il padding interno */
+    text-align: center; /* Centra il testo all'interno del pulsante */
+    text-decoration: none; /* Rimuove il sottolineato */
+    font-size: 16px; /* Imposta la dimensione del carattere */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Aggiungi transizioni */
 }
+
 
 .project-button:hover {
-    background-color: #d3794e;
-    color: #fff;
+    background-color: #1565c0; /* Cambia il colore di sfondo al passaggio del mouse */
+    color: #ffffff; /* Cambia il colore del testo al passaggio del mouse */
+    border-color: #1565c0; /* Cambia il colore del bordo al passaggio del mouse */
 }
 
-@media only screen and (min-width: 768px) {
-    .projects {
-        flex-direction: row; 
-        flex-wrap: wrap; 
+.social-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-container a {
+    color: #1976d2;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-container a:hover {
+    color: #d32f2f;
+}
+
+.small {
+    font-size: 14px;
+    color: #757575;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .main-content {
+        padding: 30px;
+    }
+
+    .hide_res{
+        display: none;
+    }
+
+    .postcard,
+    .who-i-am {
+        width: calc(100% - 20px);
+    }
+
+    .button {
+        padding: 15px 30px;
     }
 
     .project {
-        flex: 0 0 calc(50% - 20px); 
-        margin-right: 20px; 
+        flex-direction: column;
     }
 
-    .project:last-child {
-        margin-right: 0;
+    .introduction {
+        display: block;
+        margin: auto;
     }
-}
 
+    .project-image {
+        border-radius: 10px;
+    }
 
-@media only screen and (max-width: 600px){
-	body {
-		text-align: center;
-		padding-top:0em;
-		font-family: 'Fira Code', monospace;
-	}
-	.button {
-		border-radius: 15px;
-		margin-top: 2em;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		text-transform: uppercase;
-	}
+    .project-image img {
+        border-radius: 10px;
+    }
 
-	.button:hover {
-		border-radius: 15px;
-		margin-top: 2em;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		text-transform: uppercase;
-	}
-
+    .project-content {
+        padding: 20px;
+    }
 }
