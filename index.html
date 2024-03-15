@@ -21,7 +21,7 @@
                 <img src="img/profile_pic.png" alt="Foto profilo" class="profile-pic">
                 <h1></h1>
                 <h2>Davide Bassan</h2>
-                <h3>M.Sc. Student at Universit&agrave; Degli Studi di Padova</h3>
+                <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> M.Sc. Student at Universit&agrave; Degli Studi di Padova</h3>
                 <div class="contact-links">
                     <a href="https://www.linkedin.com/in/davide-bassan/" target="_blank"><i class="fa fa-linkedin"></i></a>
                     <a href="mailto:davidebassan@outlook.com" target="_blank"><i class="fa fa-envelope"></i></a>
@@ -33,7 +33,7 @@
         
             <!-- Who I Am Section -->
             <div class="who-i-am">
-                <h2 class="section-title">Who I Am</h2>
+                <h2 class="section-title"><i class="fa fa-question-circle" aria-hidden="true"></i> Who I am</h2>
                 <p>At the age of 10, I became <b>enamored with the world of computing</b>, immediately delving into learning about how computers function.</p>
                 <p>Today, I am a </b>Master's student in Computer Science</b> at the University of Padua (a name I do not entirely share because, if anything, it is informatics that constitutes a science, not computers). I am currently <b>specializing in artificial intelligence</b>, following three years of study in Udine, where I focused on <b>Internet of Things, Big Data, & Web.</b></p>
                 <p class="hide_res">I have a profound passion for informatics and robotics. During my high school years, I participated in robotics competitions, advancing to the national phases. Additionally, I am involved in soccer, where I serve as a referee.</p>
@@ -46,7 +46,10 @@
             <div class="project">
                 <div class="project-image hide_res" data-image="img/robot-env.png"></div>
                 <div class="project-content">
-                    <h4><b>Robots for Environmental Exploration</b></h4>
+                    <div class="project-title">
+                        <h4><b>Robots for Environmental Exploration</b></h4>
+                        <p class="date" style="background-color: brown;">2022</p>
+                    </div>
                     <p class="tags">SLAM </p>
                     <p class="tags">ROS</p>
                     <p class="tags">IoT</p>
@@ -56,6 +59,7 @@
                     <div class="project-buttons">
                         <a href="documents/robots_fee.pdf" target="_blank" class="project-button"><i class="fa fa-file-pdf-o"></i></a>
                         <a href="https://github.com/davidebassan/Midge-Explorer" target="_blank" class="project-button"><i class="fa fa-github"></i> </a>
+                        <a href="" target="_blank" class="project-button disabled"><i class="fa fa-globe"></i></a>
                     </div>
                 </div>
             </div>
@@ -63,7 +67,11 @@
             <div class="project">
                 <div class="project-image hide_res" data-image="img/lips-reading.png"></div>
                 <div class="project-content">
-                    <h4><b>Lips Reading</b></h4>
+                    <div class="project-title">
+                        <h4><b>Lips Reading</b></h4>
+                        <p class="date" style="background-color: brown;">2023</p>
+                    </div>
+
                     <p class="tags">Artificial Intelligence </p>
                     <p class="tags">Keras </p>
                     <p class="tags">Computer Vision </p>
@@ -72,7 +80,8 @@
                     <p class="project-description">Using the MIRACL-VC1 dataset and the Keras library, I tackled the main problem by implementing a convolutional neural network (CNN) model. The CNN was trained to automatically extract salient features from video frames, leveraging its ability to learn complex visual patterns. Subsequently, I employed a recurrent neural network (RNN) architecture to process the features extracted from the CNN and predict words or phrases from the input video. Additionally, I applied data augmentation techniques to increase the variability of the training samples, thereby improving the model's performance and reducing the risk of overfitting.</p>
                     <div class="project-buttons">
                         <a href="documents/lips-reading.pdf" target="_blank" class="project-button"><i class="fa fa-file-pdf-o"></i></a>
-                        <a href="https://github.com/davidebassan/Midge-Explorer" target="_blank" class="project-button"><i class="fa fa-github"></i></a>
+                        <a href="https://github.com/davidebassan/Lips-Readingr" target="_blank" class="project-button"><i class="fa fa-github"></i></a>
+                        <a href="" target="_blank" class="project-button disabled"><i class="fa fa-globe"></i></a>
                     </div>
                 </div>
             </div>
@@ -81,7 +90,10 @@
                 <div class="project-image hide_res" data-image="img/ardu-garden.JPG">
                 </div>
                 <div class="project-content">
-                    <h4><b>Ardu Garden</b></h4>
+                    <div class="project-title">
+                        <h4><b>Ardu Garden</b></h4>
+                        <p class="date" style="background-color: rgb(82, 161, 45);">Working on</p>
+                    </div>
 
                     <p class="tags">Arduino </p>
                     <p class="tags">3D Printing </p>
@@ -89,7 +101,9 @@
                     <p class="tags">IoT </p>
                         <p class="project-description">This project implements a hydroponic garden system controlled via Arduino, entirely 3D-printed, which manages the irrigation pump and plant lighting. The system features a web interface for control and monitoring functionalities.</p>
                     <div class="project-buttons">
+                        <a href="" target="_blank" class="project-button disabled"><i class="fa fa-file-pdf-o"></i></a>
                         <a href="https://github.com/davidebassan/Ardu-Garden" target="_blank" class="project-button"><i class="fa fa-github"></i></a>
+                        <a href="" target="_blank" class="project-button disabled"><i class="fa fa-globe"></i></a>
                     </div>
                 </div>
             </div>
@@ -98,13 +112,17 @@
                 <div class="project-image hide_res" data-image="img/midge.png">
                 </div>
                 <div class="project-content">
-                    <h4><b>Midge</b></h4>
+                    <div class="project-title">
+                        <h4><b>Midge</b></h4>
+                        <p class="date" style="background-color: brown;">2018</p>
+                    </div>
                     <p class="tags">Node JS </p>
                     <p class="tags">Multiplayer Game </p>
                     <p class="project-description">A 2D online multiplayer game developed in Node.js. Players control a square character (the 'mosquito') that rotates based on mouse movement and moves within the map using the keyboard keys. Each mosquito has a stinger (a white triangle) in the upper-left corner, and the objective is to sting opponents on their exposed areas while avoiding being stung by enemy stingers.</p>
                     <div class="project-buttons">
                         <a href="documents/Midge_xyz.pdf" target="_blank" class="project-button"><i class="fa fa-file-pdf-o"></i></a>
                         <a href="https://github.com/davidebassan/Midge" target="_blank" class="project-button"><i class="fa fa-github"></i></a>
+                        <a href="https://midge.onrender.com/" target="_blank" class="project-button"><i class="fa fa-globe"></i></a>
                     </div>
                 </div>
             </div>
@@ -116,7 +134,10 @@
             <div class="project">
                 <div class="project-image hide_res" data-image="img/officina-camper-2000.png"></div>
                 <div class="project-content">
-                    <h4><b>Camper 2000</b></h4>
+                    <div class="project-title">
+                        <h4><b>Officina Camper 2000</b></h4>
+                        <p class="date" style="background-color: brown;">2017</p>
+                    </div>
                     <p class="project-description">Officina Camper 2000 specializes in camper van repair and conversion services. Upon the request of the client, I embarked on the task of redesigning and redeveloping their website from scratch, drawing inspiration from their previous site.</p>
                     <div class="project-buttons">
                         <a href="http://www.officinacamper2000.com/" target="_blank" class="project-button"><i class="fa fa-globe"></i></a>
