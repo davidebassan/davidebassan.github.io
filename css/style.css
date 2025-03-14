@@ -27,7 +27,8 @@ body {
 }
 
 .postcard,
-.who-i-am {
+.who-i-am,
+.cv-section{
     background-color: #2a2a2a;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -234,6 +235,29 @@ a.disabled {
     color: #757575;
     margin-top: 10px;
 }
+.education-entry {
+    margin-bottom: 20px;
+    border-left: 4px solid #61dafb;
+    padding-left: 15px;
+}
+    
+.education-entry h3 {
+    color: #61dafb;
+    margin-bottom: 5px;
+}
+    
+.institution {
+    color: #e0e0e0;
+    font-size: 16px;
+}
+    
+.date {
+    float: right;
+    color: #b0b0b0;
+    font-style: italic;
+        }
+    
+    
 
 @media screen and (max-width: 768px) {
     body{
@@ -278,3 +302,5 @@ a.disabled {
         padding: 20px;
     }
 }
+
+    
